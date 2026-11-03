@@ -54,7 +54,26 @@ Should a mobile game move its first progress gate from level 30 to 40? Across 90
 </tr>
 </table>
 
-🔄 **In progress — Business Metrics & Dashboard:** a metric framework for Olist that defends a north star metric (and argues why retention isn't it), plus a live Streamlit dashboard.
+### Level 2 — Business Metrics & BI
+
+<table>
+<tr>
+<td width="45%" valign="top">
+<a href="https://github.com/veysellball/business-metrics-dashboard"><img src="https://raw.githubusercontent.com/veysellball/business-metrics-dashboard/main/ScreenShots/mainPage.png" alt="Olist business health dashboard"></a>
+</td>
+<td valign="top">
+<b><a href="https://github.com/veysellball/business-metrics-dashboard">Olist Business Health — Metric Framework &amp; Live Dashboard</a></b>
+<br><br>
+Which single number should a marketplace steer by? The north star is <b>Good Orders</b> (on time + 4–5★ review): only 74.4% of orders become one, and the biggest loss comes after delivery. Retention is rejected as the north star: only 1.99% of buyers return within 180 days, and doubling that adds just ≈2.2% to GMV.
+<br><br>
+<code>DuckDB</code> <code>pandas</code> <code>Streamlit</code> <code>metric design</code>
+<br><br>
+<a href="https://business-metrics-dashboard-wxi8bdappzgugs8nuetupfx.streamlit.app">Live dashboard →</a> · <a href="https://github.com/veysellball/business-metrics-dashboard/blob/main/reports/metric_dictionary.md">Metric dictionary →</a>
+</td>
+</tr>
+</table>
+
+🔄 **In progress — Power BI companion:** the same Olist metrics rebuilt in Power BI as a star schema (Power Query + DAX), and reconciled against the Python numbers above. The data model and DAX measures are done; the report pages are next. [Repo →](https://github.com/veysellball/olist-ecommerce-powerbi-dashboard)
 
 **Next:** causal inference (DoWhy) → churn classification with MLflow + CI → demand forecasting with uncertainty → an evaluated LLM analyst (text-to-SQL + RAG) → deployment with FastAPI and Docker.
 
@@ -71,6 +90,8 @@ Earlier work outside the data science series:
 
 ## Toolkit
 
-**Used in published projects:** Python · SQL (DuckDB) · pandas · NumPy · SciPy · statsmodels · Matplotlib · Jupyter · Git
+**Used in published projects:** Python · SQL (DuckDB) · pandas · NumPy · SciPy · statsmodels · Matplotlib · Streamlit · Jupyter · Git
+
+**In progress:** Power BI (Power Query, DAX, star schema)
 
 <!-- TODO: add contact links (LinkedIn, email) -->
