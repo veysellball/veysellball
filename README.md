@@ -54,6 +54,23 @@ Should a mobile game move its first progress gate from level 30 to 40? Across 90
 </tr>
 </table>
 
+<table>
+<tr>
+<td width="45%" valign="top">
+<a href="https://github.com/veysellball/causal-inference"><img src="https://raw.githubusercontent.com/veysellball/causal-inference/main/reports/dag.png" alt="Causal DAG: delivery delay and review score"></a>
+</td>
+<td valign="top">
+<b><a href="https://github.com/veysellball/causal-inference">Olist — Causal Inference: Delivery Delays &amp; Review Sentiment</a></b>
+<br><br>
+Late orders get 56.6 points fewer 4–5★ reviews, but is lateness the cause? On 93,832 orders, adjusting for 44 confounders shows the true penalty is about <b>−34 points (ATT)</b>: roughly 40% of the naive gap is selection bias. Includes a causal DAG, backdoor identification, propensity matching, IPW and doubly robust estimation, with balance and overlap diagnostics.
+<br><br>
+<code>DoWhy</code> <code>statsmodels</code> <code>propensity scores</code> <code>DAG</code>
+<br><br>
+<a href="https://github.com/veysellball/causal-inference#key-findings">Key findings →</a>
+</td>
+</tr>
+</table>
+
 ### Level 2 — Business Metrics & BI
 
 <table>
@@ -90,7 +107,7 @@ The same Good Orders metric framework rebuilt as a Power BI semantic model (star
 </tr>
 </table>
 
-**Next:** causal inference (DoWhy) → churn classification with MLflow + CI → demand forecasting with uncertainty → an evaluated LLM analyst (text-to-SQL + RAG) → deployment with FastAPI and Docker.
+**Next:** churn classification with MLflow + CI → demand forecasting with uncertainty → an evaluated LLM analyst (text-to-SQL + RAG) → deployment with FastAPI and Docker.
 
 ---
 
@@ -105,6 +122,6 @@ Earlier work outside the data science series:
 
 ## Toolkit
 
-**Used in published projects:** Python · SQL (DuckDB) · pandas · NumPy · SciPy · statsmodels · Matplotlib · Streamlit · Power BI (DAX, Power Query, star schema, PBIP/TMDL) · Jupyter · Git
+**Used in published projects:** Python · SQL (DuckDB) · pandas · NumPy · SciPy · statsmodels · DoWhy · Matplotlib · Streamlit · Power BI (DAX, Power Query, star schema, PBIP/TMDL) · Jupyter · Git
 
 <!-- TODO: add contact links (LinkedIn, email) -->
