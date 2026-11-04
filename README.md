@@ -107,7 +107,23 @@ The same Good Orders metric framework rebuilt as a Power BI semantic model (star
 </tr>
 </table>
 
-**Next:** churn classification with MLflow + CI → demand forecasting with uncertainty → an evaluated LLM analyst (text-to-SQL + RAG) → deployment with FastAPI and Docker.
+### Level 3 — Forecasting at Scale *(in progress)*
+
+<table>
+<tr>
+<td valign="top">
+<b><a href="https://github.com/veysellball/m5-forecasting-spark">M5 Forecasting at Scale — PySpark &amp; LightGBM</a></b> 🚧
+<br><br>
+How much will each Walmart store sell over the next 28 days, and how sure are we? Forecasting all 30,490 item-store series of M5 (≈59M rows): a leakage-free feature pipeline in PySpark on Databricks, per-series baselines trained in parallel with <code>applyInPandas</code>, and LightGBM evaluated with rolling-origin backtests and P10/P90 intervals for store replenishment. The validation plan is committed before any model is trained, and a pytest suite in CI checks that no feature can see the future.
+<br><br>
+<code>PySpark</code> <code>Databricks</code> <code>LightGBM</code> <code>MLflow</code> <code>pytest</code> <code>GitHub Actions</code>
+<br><br>
+<a href="https://github.com/veysellball/m5-forecasting-spark">Repository →</a>
+</td>
+</tr>
+</table>
+
+**Next:** an evaluated LLM analyst (text-to-SQL + RAG) → deployment with FastAPI, Docker and Airflow.
 
 ---
 
