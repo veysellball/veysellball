@@ -73,7 +73,22 @@ Which single number should a marketplace steer by? The north star is <b>Good Ord
 </tr>
 </table>
 
-🔄 **In progress — Power BI companion:** the same Olist metrics rebuilt in Power BI as a star schema (Power Query + DAX), and reconciled against the Python numbers above. The data model and DAX measures are done; the report pages are next. [Repo →](https://github.com/veysellball/olist-ecommerce-powerbi-dashboard)
+<table>
+<tr>
+<td width="45%" valign="top">
+<a href="https://github.com/veysellball/olist-ecommerce-powerbi-dashboard"><img src="https://raw.githubusercontent.com/veysellball/olist-ecommerce-powerbi-dashboard/main/ScreenShots/health_overview.png" alt="Power BI Health Overview page"></a>
+</td>
+<td valign="top">
+<b><a href="https://github.com/veysellball/olist-ecommerce-powerbi-dashboard">Olist Business Health — Power BI Metric Layer</a></b>
+<br><br>
+The same Good Orders metric framework rebuilt as a Power BI semantic model (star schema, 2 fact tables, DAX measures, 6 report pages). A dedicated reconciliation page proves every metric matches the Python model: <b>99,092 orders, 73,734 Good Orders and GMV to the cent, with zero difference in every month</b>. Includes a Power BI vs. Streamlit comparison on when to use which.
+<br><br>
+<code>Power BI</code> <code>DAX</code> <code>Power Query</code> <code>TMDL / PBIP</code> <code>reconciliation</code>
+<br><br>
+<a href="https://github.com/veysellball/olist-ecommerce-powerbi-dashboard/blob/main/docs/dax_measures.md">DAX catalog →</a> · <a href="https://github.com/veysellball/olist-ecommerce-powerbi-dashboard/blob/main/docs/metric_dictionary.csv">Metric dictionary →</a>
+</td>
+</tr>
+</table>
 
 **Next:** causal inference (DoWhy) → churn classification with MLflow + CI → demand forecasting with uncertainty → an evaluated LLM analyst (text-to-SQL + RAG) → deployment with FastAPI and Docker.
 
@@ -90,8 +105,6 @@ Earlier work outside the data science series:
 
 ## Toolkit
 
-**Used in published projects:** Python · SQL (DuckDB) · pandas · NumPy · SciPy · statsmodels · Matplotlib · Streamlit · Jupyter · Git
-
-**In progress:** Power BI (Power Query, DAX, star schema)
+**Used in published projects:** Python · SQL (DuckDB) · pandas · NumPy · SciPy · statsmodels · Matplotlib · Streamlit · Power BI (DAX, Power Query, star schema, PBIP/TMDL) · Jupyter · Git
 
 <!-- TODO: add contact links (LinkedIn, email) -->
