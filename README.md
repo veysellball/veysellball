@@ -114,9 +114,9 @@ The same Good Orders metric framework rebuilt as a Power BI semantic model (star
 <td valign="top">
 <b><a href="https://github.com/veysellball/m5-forecasting-spark">M5 Forecasting at Scale — PySpark &amp; LightGBM</a></b> 🚧
 <br><br>
-How much will each Walmart store sell over the next 28 days, and how sure are we? Forecasting all 30,490 item-store series of M5 (≈59M rows): a leakage-free feature pipeline in PySpark on Databricks, per-series baselines trained in parallel with <code>applyInPandas</code>, and LightGBM evaluated with rolling-origin backtests and P10/P90 intervals for store replenishment. The validation plan is committed before any model is trained, and a pytest suite in CI checks that no feature can see the future.
+How much will each Walmart store sell over the next 28 days, and how sure are we? Forecasting all 30,490 item-store series of M5 (≈59M rows): a leakage-free feature pipeline in PySpark on Databricks, distributed per-series baselines (SeasonalNaive, AutoETS, Croston) trained with <code>applyInPandas</code> via StatsForecast, and a structured export pipeline (Delta Lake / Unity Catalog Volumes) for local LightGBM backtesting with rolling-origin splits and prediction intervals. A strict pytest suite in CI verifies feature causality and baseline schemas.
 <br><br>
-<code>PySpark</code> <code>Databricks</code> <code>LightGBM</code> <code>MLflow</code> <code>pytest</code> <code>GitHub Actions</code>
+<code>PySpark</code> <code>Databricks</code> <code>Delta Lake</code> <code>StatsForecast</code> <code>LightGBM</code> <code>pytest</code> <code>CI/CD</code>
 <br><br>
 <a href="https://github.com/veysellball/m5-forecasting-spark">Repository →</a>
 </td>
